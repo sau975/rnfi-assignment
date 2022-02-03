@@ -1,0 +1,17 @@
+<div [formGroup]="form">
+  <div formArrayName="data">
+    <div *ngFor="let company of formArray.value; let i = index">
+      <div [formGroupName]="i">
+          <label>{{company.key}}</label>
+          <input type="text" formControlName="accountholder" />
+          <input type="text" formControlName="accountnumber" />
+          <input type="text" formControlName="bankname" />
+          <input type="text" formControlName="ifsccode" />
+          <input type="text" formControlName="balance" />
+          <input type="text" formControlName="Address" />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <button (click)="addBin()">Add Bin</button>
+<button (click)="save()">Save</button> -->
