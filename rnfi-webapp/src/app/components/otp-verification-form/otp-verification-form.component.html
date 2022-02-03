@@ -1,0 +1,8 @@
+<div class="text-center">
+  <form [formGroup]="form" (ngSubmit)="otpVerify()" class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Please enter otp</h1>
+    <label class="sr-only">OTP</label>
+    <input type="number" placeholder="otp" class="form-control" formControlName="otp" required> <br>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!form.valid">Submit</button>
+  </form>
+</div>
