@@ -1,0 +1,14 @@
+<div *ngIf="userDetail" style="border: 1px solid ; height: auto; width: 50%; text-align: center;">
+  <p>User Name: {{userDetail.username}}</p>
+  <p>Name: {{userDetail.name}}</p>
+  <p>Phone: {{userDetail.phone}}</p>
+  <p>Email: {{userDetail.email}}</p>
+  <p>Address: {{userDetail.address}}</p>
+</div>  <br>
+
+<div>
+  <a [routerLink]="'../account-form'">Form</a>
+</div>  <br>
+
+
+<button (click)="logOut()">Log Out</button>
